@@ -1,0 +1,245 @@
+body {
+    margin: 0 auto;
+    font-family: "fira-sans", "微軟正黑體","Micorosft  JhengHei",sans-serif;
+    font-style: normal;
+    line-height: 1;
+    color: #797979;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(130, 130, 130);
+}
+
+a:hover {
+    color: rgb(50, 50, 50);
+}
+
+ul li {
+    list-style: none;
+}
+
+li {
+    display:inline;
+}
+
+.keybox {
+    width: 100%;
+    height: 800px;
+}
+
+
+.slider {
+    position:fixed;
+    top:0px;
+    width: 100%;
+    background-size: 100%;
+    background-position:center;
+    z-index: -1;
+}
+
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slide1 {
+    background: url(../images/%E4%B8%AD%E5%92%8C%E6%9D%8E%E5%AE%851.jpg) no-repeat center;
+    background-size: cover;
+    animation:fade 8s infinite;
+} 
+.slide2 {
+    background: url(../images/Humanities%20x%20Art%20x%20Space1.jpg)no-repeat center;
+    background-size: cover;
+    animation:fade2 8s infinite;
+}
+.slide3 {
+    background: url(../images/TID%202014-1.jpg)no-repeat center;
+    background-size: cover;
+    animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+    0%   {opacity:1}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+}
+@keyframes fade2
+{
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+}
+@keyframes fade3
+{
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
+}
+
+.scroll {
+    position:relative;
+    margin-top: -150px;
+    font-size: 14px;
+    background: #fff;
+    text-align: center;
+}
+
+
+.header {
+    max-width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 230px;
+    padding: 60px 0;
+}
+
+
+.header-fixed {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+
+.mainmenu {
+    display: inline;
+    padding: 5px 10px;
+    font-size: 12pt;
+    font-weight: lighter;
+    color: rgba(130, 130, 130, 0.9);
+    letter-spacing: 1px;
+}
+
+.mainmenu-logo {
+    display: inline;
+    padding: 0 30px;
+    font-size: 12pt;
+    font-weight: bold;
+    color: rgba(130, 130, 130, 0.9);
+    letter-spacing: 1px;
+}
+
+.mainmenu-logo:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+
+.linemenu {
+    display: inline;
+    padding: 0 50px;
+}
+
+
+.works {
+    margin-bottom: 13px;
+    position: relative;
+}
+
+.imgs {
+    width: 100%;
+    height: 100%;
+}
+
+.works-title {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.works-title:hover {
+    opacity: 1;
+    transition: all 0.5s ease;
+    display: block;
+}
+
+#footer {
+    margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 120px 0 40px 0;
+    position: relative;
+}
+
+.footer-social {
+    position: absolute;
+    right: 7%;
+}
+
+ul li a .socialpath {
+    fill: #797979;
+    transition: all 0.5s ease; 
+    bottom: 0;
+}
+
+ul li a .socialpath:hover {
+    fill: #000;
+    bottom: 0;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0; 
+}
+
+.works-box {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.works-box-down {
+    padding-top: 230px;
+}
+.keyimg-words {
+    position:relative;
+    text-align: center;
+    display: block;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight:500;
+    margin-top: 170px;
+}
+
+
+h2 {
+    position:relative;
+    text-align: center;
+    display: block;
+    color: #FFFFFF;
+    font-size: 72px;
+    font-weight:500;
+    margin-top: 9px;
+}
+
+.vicemenu {
+    display: inline;
+    padding: 5px 10px;
+    font-size: 11pt;
+    font-weight: lighter;
+    color: rgba(130, 130, 130, 0.9);
+    letter-spacing: 1px;
+}
+
+.circle {
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+    border-radius: 100%;
+}
